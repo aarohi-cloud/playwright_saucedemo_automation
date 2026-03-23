@@ -1,0 +1,30 @@
+{
+  "login_page": {
+    "username_input": "input[data-test=\"username\"]",
+    "password_input": "input[data-test=\"password\"]",
+    "login_button": "input[data-test=\"login-button\"]",
+    "error_message": ".error-message-container"
+  },
+  "inventory_page": {
+    "products_container": "[data-test=\"inventory-list\"]",
+    "product_item": "[data-test=\"inventory-item\"]",
+    "product_title": "[data-test=\"inventory-item-name\"]",
+    "add_to_cart_button": "[data-test=\"add-to-cart-sauce-labs-backpack\"]",
+    "shopping_cart_icon": "[data-test=\"shopping-cart-link\"]"
+  },
+  "cart_page": {
+    "cart_items_container": "[data-test=\"cart-list\"]",
+    "cart_item_row": ".cart_item",
+    "item_name": "[data-test=\"inventory-item-name\"]",
+    "item_price": "[data-test=\"inventory-item-price\"]",
+    "remove_button": "[data-test=\"remove-sauce-labs-backpack\"]",
+    "checkout_button": "[data-test=\"checkout\"]",
+    "continue_shopping_button": "[data-test=\"continue-shopping\"]"
+  },
+  "checkout_page": {
+    "first_name_input": "[data-test=\"firstName\"]",
+    "last_name_input": "[data-test=\"lastName\"]",
+    "postal_code_input": "[data-test=\"postalCode\"]",
+    "continue_button": "[data-test=\"continue\"]"
+  }
+}
