@@ -1,5 +1,5 @@
 pytest
-playwright
+pytest-playwright
 pytest-html
 pytest-xdist
 allure-pytest
