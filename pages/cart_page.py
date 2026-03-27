@@ -1,12 +1,13 @@
 from playwright.sync_api import Page
 from typing import List, Dict
+from pages.base_page import BasePage
 
 
-class CartPage:
+class CartPage(BasePage):
     """Page object for Sauce Demo cart page."""
 
     def __init__(self, page: Page):
-        self.page = page
+        super().__init__(page)
 
     # Locators
     CART_ITEMS_CONTAINER = '[data-test="cart-list"]'
@@ -20,35 +21,35 @@ class CartPage:
 
     def get_cart_items(self) -> List[Dict[str, str]]:
         """Get all items currently in the cart.
-        
+
         Returns:
             List of dictionaries containing item details (name, price, quantity)
         """
         items = []
         cart_rows = self.page.query_selector_all(self.CART_ITEM_ROW)
-        
+
         for row in cart_rows:
             name_elem = row.query_selector(self.ITEM_NAME)
             price_elem = row.query_selector(self.ITEM_PRICE)
             qty_elem = row.query_selector(self.ITEM_QUANTITY)
-            
+
             item_dict = {
                 'name': name_elem.inner_text() if name_elem else '',
                 'price': price_elem.inner_text() if price_elem else '',
                 'quantity': qty_elem.inner_text() if qty_elem else '1'
             }
             items.append(item_dict)
-        
+
         return items
 
     def remove_item(self, item_name: str) -> None:
         """Remove a specific item from cart by name.
-        
+
         Args:
             item_name: Name of the item to remove
         """
         cart_rows = self.page.query_selector_all(self.CART_ITEM_ROW)
-        
+
         for row in cart_rows:
             name_elem = row.query_selector(self.ITEM_NAME)
             if name_elem and item_name in name_elem.inner_text():
@@ -59,17 +60,17 @@ class CartPage:
 
     def proceed_to_checkout(self) -> None:
         """Click on checkout button to proceed to checkout page."""
-        self.page.click(self.CHECKOUT_BUTTON)
+        self.safe_click(self.page.locator(self.CHECKOUT_BUTTON))
         self.page.wait_for_load_state("networkidle")
 
     def continue_shopping(self) -> None:
         """Click on continue shopping button to go back to inventory."""
-        self.page.click(self.CONTINUE_SHOPPING_BUTTON)
+        self.safe_click(self.page.locator(self.CONTINUE_SHOPPING_BUTTON))
         self.page.wait_for_load_state("networkidle")
 
     def get_item_count(self) -> int:
         """Get the number of items in the cart.
-        
+
         Returns:
             Number of items in cart
         """

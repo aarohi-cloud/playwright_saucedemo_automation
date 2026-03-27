@@ -1,12 +1,13 @@
 from playwright.sync_api import Page
 from typing import List
+from pages.base_page import BasePage
 
 
-class InventoryPage:
+class InventoryPage(BasePage):
     """Page object for Sauce Demo inventory page."""
 
     def __init__(self, page: Page):
-        self.page = page
+        super().__init__(page)
 
     # Locators
     PRODUCTS_CONTAINER = '[data-test="inventory-list"]'
@@ -21,7 +22,7 @@ class InventoryPage:
 
     def get_all_product_names(self) -> List[str]:
         """Get names of all products on the page.
-        
+
         Returns:
             List of product names
         """
@@ -31,7 +32,7 @@ class InventoryPage:
 
     def add_product_to_cart(self, product_name: str) -> None:
         """Add a specific product to cart by name.
-        
+
         Args:
             product_name: Name of the product to add to cart
         """
@@ -48,7 +49,7 @@ class InventoryPage:
 
     def get_cart_count(self) -> int:
         """Get the current count of items in the cart.
-        
+
         Returns:
             Number of items in cart, or 0 if badge not visible
         """
@@ -56,18 +57,18 @@ class InventoryPage:
         if badge:
             try:
                 return int(badge.inner_text())
-            except:
+            except Exception:
                 return 0
         return 0
 
     def go_to_cart(self) -> None:
         """Click on shopping cart link to go to cart page."""
-        self.page.click(self.SHOPPING_CART_LINK)
+        self.safe_click(self.page.locator(self.SHOPPING_CART_LINK))
         self.page.wait_for_load_state("networkidle")
 
     def sort_products(self, option: str) -> None:
         """Sort products by the specified option.
-        
+
         Args:
             option: Sort option - 'az', 'za', 'lohi' (low to high), 'hilo' (high to low)
         """
@@ -77,23 +78,23 @@ class InventoryPage:
             'lohi': 'Price (low to high)',
             'hilo': 'Price (high to low)'
         }
-        
+
         if option not in sort_options:
             raise ValueError(f"Invalid sort option: {option}")
-        
+
         sort_value_map = {
             'az': 'az',
             'za': 'za',
             'lohi': 'lohi',
             'hilo': 'hilo'
         }
-        
-        self.page.select_option(self.SORT_SELECT, sort_value_map[option])
+
+        self.safe_select(self.page.locator(self.SORT_SELECT), sort_value_map[option])
         self.page.wait_for_load_state("networkidle")
 
     def get_product_prices(self) -> List[float]:
         """Get prices of all products on the page.
-        
+
         Returns:
             List of product prices as floats
         """

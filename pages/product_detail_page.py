@@ -1,11 +1,12 @@
 from playwright.sync_api import Page
+from pages.base_page import BasePage
 
 
-class ProductDetailPage:
+class ProductDetailPage(BasePage):
     """Page object for Sauce Demo product detail page."""
 
     def __init__(self, page: Page):
-        self.page = page
+        super().__init__(page)
 
     # Locators
     PRODUCT_NAME = '[data-test="inventory-item-name"]'
@@ -18,7 +19,7 @@ class ProductDetailPage:
 
     def get_product_name(self) -> str:
         """Get the name of the product.
-        
+
         Returns:
             Product name text
         """
@@ -29,7 +30,7 @@ class ProductDetailPage:
 
     def get_product_price(self) -> str:
         """Get the price of the product.
-        
+
         Returns:
             Product price text including currency
         """
@@ -40,7 +41,7 @@ class ProductDetailPage:
 
     def get_product_description(self) -> str:
         """Get the description of the product.
-        
+
         Returns:
             Product description text
         """
@@ -62,5 +63,5 @@ class ProductDetailPage:
 
     def go_back(self) -> None:
         """Click the back button to return to inventory page."""
-        self.page.click(self.BACK_BUTTON)
+        self.safe_click(self.page.locator(self.BACK_BUTTON))
         self.page.wait_for_load_state("networkidle")

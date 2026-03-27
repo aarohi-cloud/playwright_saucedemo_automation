@@ -4,3 +4,8 @@ reports/
 logs/
 .pytest_cache/
 *.pyc
+allure-results/
+allure-report/
+.env
+.env.local
+.idea/
