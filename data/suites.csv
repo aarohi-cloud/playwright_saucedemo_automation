@@ -1,241 +1,361 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
 "
-    Test that clicking on a product navigates to product detail page.
-    Verifies that product detail page loads with correct product information.
-    ","936","test_product_detail_page[chromium]","tests","2026-08-19","passed","2026-08-19","","test_inventory","",""
-"
-    Test that a standard user can successfully login.
-    Verifies that the inventory page loads after login.
-    ","865","test_valid_login_standard_user[chromium]","tests","2026-08-19","passed","2026-08-19","","test_login","",""
+    Test that products can be sorted A-Z by name.
+    Verifies that products are in alphabetical order.
+    ","1550","test_sort_products_az[webkit]","tests","2026-08-20","passed","2026-08-20","","test_inventory","",""
 "
     Test that both empty fields show error message.
     Verifies validation when username and password are both empty.
-    ","1176","test_both_fields_empty[webkit]","tests","2026-08-19","passed","2026-08-19","","test_login","",""
-"
-    Test that missing last name shows validation error.
-    Verifies form validation for required last name field.
-    ","1166","test_missing_last_name[chromium]","tests","2026-08-19","passed","2026-08-19","","test_checkout","",""
-"
-    Test that user can logout and return to login page.
-    Verifies that logout functionality works correctly.
-    ","2184","test_logout[webkit]","tests","2026-08-19","passed","2026-08-19","","test_login","",""
-"
-    Test that products can be sorted by price low to high.
-    Verifies that prices are in ascending order.
-    ","1272","test_sort_by_price_low_high[webkit]","tests","2026-08-19","passed","2026-08-19","","test_inventory","",""
+    ","1098","test_both_fields_empty[firefox]","tests","2026-08-20","passed","2026-08-20","","test_login","",""
 "
     Test that a locked out user cannot login and sees appropriate error message.
     Verifies error handling for locked user accounts.
-    ","6160","test_locked_out_user[webkit]","tests","2026-08-19","passed","2026-08-19","","test_login","",""
-"
-    Test that products can be sorted by price high to low.
-    Verifies that prices are in descending order.
-    ","934","test_sort_by_price_high_low[chromium]","tests","2026-08-19","passed","2026-08-19","","test_inventory","",""
-"
-    Test that a locked out user cannot login and sees appropriate error message.
-    Verifies error handling for locked user accounts.
-    ","5839","test_locked_out_user[chromium]","tests","2026-08-19","passed","2026-08-19","","test_login","",""
-"
-    Test complete end-to-end checkout flow.
-    Verifies full journey: login → add items → checkout → confirmation.
-    ","1263","test_complete_checkout_flow[chromium]","tests","2026-08-19","passed","2026-08-19","","test_checkout","",""
-"
-    Test that order total is correctly calculated.
-    Verifies that total = subtotal + tax.
-    ","1205","test_verify_order_total[chromium]","tests","2026-08-19","passed","2026-08-19","","test_checkout","",""
-"
-    Test that products can be sorted by price high to low.
-    Verifies that prices are in descending order.
-    ","1308","test_sort_by_price_high_low[webkit]","tests","2026-08-19","passed","2026-08-19","","test_inventory","",""
-"
-    Test that user can add a single item to cart.
-    Verifies that cart count increments to 1.
-    ","1209","test_add_single_item_to_cart[chromium]","tests","2026-08-19","passed","2026-08-19","","test_cart","",""
-"
-    Test that invalid password shows error message.
-    Verifies that login fails with incorrect password.
-    ","5849","test_invalid_password[chromium]","tests","2026-08-19","passed","2026-08-19","","test_login","",""
-"
-    Test that cart badge updates with each item addition.
-    Verifies that badge count is accurate.
-    ","1504","test_cart_badge_updates[webkit]","tests","2026-08-19","passed","2026-08-19","","test_cart","",""
-"
-    Test that products can be sorted A-Z by name.
-    Verifies that products are in alphabetical order.
-    ","929","test_sort_products_az[chromium]","tests","2026-08-19","passed","2026-08-19","","test_inventory","",""
-"
-    Test that empty username field shows error message.
-    Verifies validation for empty username input.
-    ","848","test_empty_username[chromium]","tests","2026-08-19","passed","2026-08-19","","test_login","",""
+    ","6109","test_locked_out_user[firefox]","tests","2026-08-20","passed","2026-08-20","","test_login","",""
 "
     Test that cart items persist after navigating away and back.
     Verifies that cart data is maintained across page navigation.
-    ","1051","test_cart_persists_after_navigation[chromium]","tests","2026-08-19","passed","2026-08-19","","test_cart","",""
+    ","1771","test_cart_persists_after_navigation[webkit]","tests","2026-08-20","passed","2026-08-20","","test_cart","",""
 "
-    Test that invalid password shows error message.
-    Verifies that login fails with incorrect password.
-    ","6164","test_invalid_password[webkit]","tests","2026-08-19","passed","2026-08-19","","test_login","",""
+    Test that user can remove all items from cart.
+    Verifies that cart becomes empty after removing multiple items.
+    ","2143","test_remove_all_items[firefox]","tests","2026-08-20","passed","2026-08-20","","test_cart","",""
 "
-    Test that user can continue shopping from cart page.
-    Verifies that continue shopping button returns to inventory.
-    ","1055","test_continue_shopping[chromium]","tests","2026-08-19","passed","2026-08-19","","test_cart","",""
+    Test that user can add a single item to cart.
+    Verifies that cart count increments to 1.
+    ","2472","test_add_single_item_to_cart[firefox]","tests","2026-08-20","passed","2026-08-20","","test_cart","",""
+"
+    Test that cart badge updates with each item addition.
+    Verifies that badge count is accurate.
+    ","1776","test_cart_badge_updates[webkit]","tests","2026-08-20","passed","2026-08-20","","test_cart","",""
 "
     Test that both empty fields show error message.
     Verifies validation when username and password are both empty.
-    ","823","test_both_fields_empty[chromium]","tests","2026-08-19","passed","2026-08-19","","test_login","",""
-"
-    Test that user can remove all items from cart.
-    Verifies that cart becomes empty after removing multiple items.
-    ","1808","test_remove_all_items[chromium]","tests","2026-08-19","passed","2026-08-19","","test_cart","",""
-"
-    Test that user can continue shopping from cart page.
-    Verifies that continue shopping button returns to inventory.
-    ","1522","test_continue_shopping[webkit]","tests","2026-08-19","passed","2026-08-19","","test_cart","",""
-"
-    Test that cart badge updates with each item addition.
-    Verifies that badge count is accurate.
-    ","1095","test_cart_badge_updates[chromium]","tests","2026-08-19","passed","2026-08-19","","test_cart","",""
-"
-    Test that invalid username shows error message.
-    Verifies that login fails with non-existent username.
-    ","5839","test_invalid_username[chromium]","tests","2026-08-19","passed","2026-08-19","","test_login","",""
-"
-    Test that empty password field shows error message.
-    Verifies validation for empty password input.
-    ","842","test_empty_password[chromium]","tests","2026-08-19","passed","2026-08-19","","test_login","",""
-"
-    Test that clicking on a product navigates to product detail page.
-    Verifies that product detail page loads with correct product information.
-    ","1281","test_product_detail_page[webkit]","tests","2026-08-19","passed","2026-08-19","","test_inventory","",""
-"
-    Test that products can be sorted by price low to high.
-    Verifies that prices are in ascending order.
-    ","941","test_sort_by_price_low_high[chromium]","tests","2026-08-19","passed","2026-08-19","","test_inventory","",""
-"
-    Test that user can add product to cart from product detail page.
-    Verifies that add to cart button works on detail page.
-    ","1880","test_add_product_from_detail_page[webkit]","tests","2026-08-19","passed","2026-08-19","","test_inventory","",""
-"
-    Test that empty password field shows error message.
-    Verifies validation for empty password input.
-    ","1189","test_empty_password[webkit]","tests","2026-08-19","passed","2026-08-19","","test_login","",""
-"
-    Test that cart items persist after navigating away and back.
-    Verifies that cart data is maintained across page navigation.
-    ","1511","test_cart_persists_after_navigation[webkit]","tests","2026-08-19","passed","2026-08-19","","test_cart","",""
-"
-    Test that products can be sorted Z-A by name.
-    Verifies that products are in reverse alphabetical order.
-    ","925","test_sort_products_za[chromium]","tests","2026-08-19","passed","2026-08-19","","test_inventory","",""
-"
-    Test checkout behavior when cart is empty.
-    Verifies that user cannot proceed to checkout with empty cart.
-    ","902","test_checkout_without_items[chromium]","tests","2026-08-19","passed","2026-08-19","","test_checkout","",""
-"
-    Test that inventory page loads with all 6 products visible.
-    Verifies that product list is displayed after login.
-    ","1254","test_inventory_page_loads[webkit]","tests","2026-08-19","passed","2026-08-19","","test_inventory","",""
-"
-    Test that products can be sorted Z-A by name.
-    Verifies that products are in reverse alphabetical order.
-    ","1300","test_sort_products_za[webkit]","tests","2026-08-19","passed","2026-08-19","","test_inventory","",""
-"
-    Test that empty username field shows error message.
-    Verifies validation for empty username input.
-    ","1158","test_empty_username[webkit]","tests","2026-08-19","passed","2026-08-19","","test_login","",""
-"
-    Test that missing first name shows validation error.
-    Verifies form validation for required first name field.
-    ","1129","test_missing_first_name[chromium]","tests","2026-08-19","passed","2026-08-19","","test_checkout","",""
-"
-    Test that user can remove items from cart.
-    Verifies that cart is empty after removing all items.
-    ","1586","test_remove_item_from_cart[chromium]","tests","2026-08-19","passed","2026-08-19","","test_cart","",""
-"
-    Test that user can add a single item to cart.
-    Verifies that cart count increments to 1.
-    ","1698","test_add_single_item_to_cart[webkit]","tests","2026-08-19","passed","2026-08-19","","test_cart","",""
-"
-    Test that user can add multiple items to cart.
-    Verifies that cart count increments correctly with each addition.
-    ","1116","test_add_multiple_items_to_cart[chromium]","tests","2026-08-19","passed","2026-08-19","","test_cart","",""
-"
-    Test that user can add multiple items to cart.
-    Verifies that cart count increments correctly with each addition.
-    ","1689","test_add_multiple_items_to_cart[webkit]","tests","2026-08-19","passed","2026-08-19","","test_cart","",""
-"
-    Test that user can add product to cart from product detail page.
-    Verifies that add to cart button works on detail page.
-    ","1522","test_add_product_from_detail_page[chromium]","tests","2026-08-19","passed","2026-08-19","","test_inventory","",""
-"
-    Test that missing zip code shows validation error.
-    Verifies form validation for required zip code field.
-    ","1157","test_missing_zip_code[chromium]","tests","2026-08-19","passed","2026-08-19","","test_checkout","",""
-"
-    Test that user can remove items from cart.
-    Verifies that cart is empty after removing all items.
-    ","2071","test_remove_item_from_cart[webkit]","tests","2026-08-19","passed","2026-08-19","","test_cart","",""
-"
-    Test that user can navigate away from checkout and cart persists.
-    Verifies that canceling checkout doesn't lose cart items.
-    ","2634","test_checkout_cancel[webkit]","tests","2026-08-19","passed","2026-08-19","","test_checkout","",""
+    ","942","test_both_fields_empty[chromium]","tests","2026-08-20","passed","2026-08-20","","test_login","",""
 "
     Test that order total is correctly calculated.
     Verifies that total = subtotal + tax.
-    ","1670","test_verify_order_total[webkit]","tests","2026-08-19","passed","2026-08-19","","test_checkout","",""
-"
-    Test that cart displays correct item details (name and price).
-    Verifies that item information is accurate in the cart.
-    ","1400","test_cart_item_details[webkit]","tests","2026-08-19","passed","2026-08-19","","test_cart","",""
+    ","1612","test_verify_order_total[firefox]","tests","2026-08-20","passed","2026-08-20","","test_checkout","",""
 "
     Test complete end-to-end checkout flow.
     Verifies full journey: login → add items → checkout → confirmation.
-    ","1738","test_complete_checkout_flow[webkit]","tests","2026-08-19","passed","2026-08-19","","test_checkout","",""
-"
-    Test that missing last name shows validation error.
-    Verifies form validation for required last name field.
-    ","1612","test_missing_last_name[webkit]","tests","2026-08-19","passed","2026-08-19","","test_checkout","",""
-"
-    Test that cart displays correct item details (name and price).
-    Verifies that item information is accurate in the cart.
-    ","1013","test_cart_item_details[chromium]","tests","2026-08-19","passed","2026-08-19","","test_cart","",""
-"
-    Test checkout behavior when cart is empty.
-    Verifies that user cannot proceed to checkout with empty cart.
-    ","1318","test_checkout_without_items[webkit]","tests","2026-08-19","passed","2026-08-19","","test_checkout","",""
-"
-    Test that user can remove all items from cart.
-    Verifies that cart becomes empty after removing multiple items.
-    ","2294","test_remove_all_items[webkit]","tests","2026-08-19","passed","2026-08-19","","test_cart","",""
-"
-    Test that inventory page loads with all 6 products visible.
-    Verifies that product list is displayed after login.
-    ","934","test_inventory_page_loads[chromium]","tests","2026-08-19","passed","2026-08-19","","test_inventory","",""
-"
-    Test that invalid username shows error message.
-    Verifies that login fails with non-existent username.
-    ","6191","test_invalid_username[webkit]","tests","2026-08-19","passed","2026-08-19","","test_login","",""
-"
-    Test that missing first name shows validation error.
-    Verifies form validation for required first name field.
-    ","1600","test_missing_first_name[webkit]","tests","2026-08-19","passed","2026-08-19","","test_checkout","",""
+    ","1965","test_complete_checkout_flow[webkit]","tests","2026-08-20","passed","2026-08-20","","test_checkout","",""
 "
     Test that a standard user can successfully login.
     Verifies that the inventory page loads after login.
-    ","1206","test_valid_login_standard_user[webkit]","tests","2026-08-19","passed","2026-08-19","","test_login","",""
+    ","985","test_valid_login_standard_user[chromium]","tests","2026-08-20","passed","2026-08-20","","test_login","",""
+"
+    Test that missing last name shows validation error.
+    Verifies form validation for required last name field.
+    ","1859","test_missing_last_name[webkit]","tests","2026-08-20","passed","2026-08-20","","test_checkout","",""
+"
+    Test that products can be sorted by price low to high.
+    Verifies that prices are in ascending order.
+    ","1201","test_sort_by_price_low_high[firefox]","tests","2026-08-20","passed","2026-08-20","","test_inventory","",""
+"
+    Test that empty password field shows error message.
+    Verifies validation for empty password input.
+    ","942","test_empty_password[chromium]","tests","2026-08-20","passed","2026-08-20","","test_login","",""
+"
+    Test that invalid username shows error message.
+    Verifies that login fails with non-existent username.
+    ","6141","test_invalid_username[firefox]","tests","2026-08-20","passed","2026-08-20","","test_login","",""
 "
     Test that user can navigate away from checkout and cart persists.
     Verifies that canceling checkout doesn't lose cart items.
-    ","2094","test_checkout_cancel[chromium]","tests","2026-08-19","passed","2026-08-19","","test_checkout","",""
+    ","2243","test_checkout_cancel[chromium]","tests","2026-08-20","passed","2026-08-20","","test_checkout","",""
+"
+    Test that user can add product to cart from product detail page.
+    Verifies that add to cart button works on detail page.
+    ","2178","test_add_product_from_detail_page[webkit]","tests","2026-08-20","passed","2026-08-20","","test_inventory","",""
+"
+    Test that a standard user can successfully login.
+    Verifies that the inventory page loads after login.
+    ","1452","test_valid_login_standard_user[webkit]","tests","2026-08-20","passed","2026-08-20","","test_login","",""
+"
+    Test that user can continue shopping from cart page.
+    Verifies that continue shopping button returns to inventory.
+    ","1182","test_continue_shopping[chromium]","tests","2026-08-20","passed","2026-08-20","","test_cart","",""
+"
+    Test that user can add multiple items to cart.
+    Verifies that cart count increments correctly with each addition.
+    ","1217","test_add_multiple_items_to_cart[chromium]","tests","2026-08-20","passed","2026-08-20","","test_cart","",""
+"
+    Test that order total is correctly calculated.
+    Verifies that total = subtotal + tax.
+    ","1356","test_verify_order_total[chromium]","tests","2026-08-20","passed","2026-08-20","","test_checkout","",""
+"
+    Test that user can navigate away from checkout and cart persists.
+    Verifies that canceling checkout doesn't lose cart items.
+    ","2816","test_checkout_cancel[webkit]","tests","2026-08-20","passed","2026-08-20","","test_checkout","",""
+"
+    Test that products can be sorted by price high to low.
+    Verifies that prices are in descending order.
+    ","1281","test_sort_by_price_high_low[firefox]","tests","2026-08-20","passed","2026-08-20","","test_inventory","",""
+"
+    Test that cart displays correct item details (name and price).
+    Verifies that item information is accurate in the cart.
+    ","1163","test_cart_item_details[chromium]","tests","2026-08-20","passed","2026-08-20","","test_cart","",""
+"
+    Test that a standard user can successfully login.
+    Verifies that the inventory page loads after login.
+    ","1171","test_valid_login_standard_user[firefox]","tests","2026-08-20","passed","2026-08-20","","test_login","",""
+"
+    Test that cart displays correct item details (name and price).
+    Verifies that item information is accurate in the cart.
+    ","1644","test_cart_item_details[webkit]","tests","2026-08-20","passed","2026-08-20","","test_cart","",""
+"
+    Test that inventory page loads with all 6 products visible.
+    Verifies that product list is displayed after login.
+    ","1506","test_inventory_page_loads[webkit]","tests","2026-08-20","passed","2026-08-20","","test_inventory","",""
+"
+    Test that empty username field shows error message.
+    Verifies validation for empty username input.
+    ","946","test_empty_username[chromium]","tests","2026-08-20","passed","2026-08-20","","test_login","",""
+"
+    Test checkout behavior when cart is empty.
+    Verifies that user cannot proceed to checkout with empty cart.
+    ","1505","test_checkout_without_items[webkit]","tests","2026-08-20","passed","2026-08-20","","test_checkout","",""
+"
+    Test that empty username field shows error message.
+    Verifies validation for empty username input.
+    ","1160","test_empty_username[firefox]","tests","2026-08-20","passed","2026-08-20","","test_login","",""
 "
     Test that user can logout and return to login page.
     Verifies that logout functionality works correctly.
-    ","1821","test_logout[chromium]","tests","2026-08-19","passed","2026-08-19","","test_login","",""
+    ","2466","test_logout[webkit]","tests","2026-08-20","passed","2026-08-20","","test_login","",""
 "
-    Test that products can be sorted A-Z by name.
-    Verifies that products are in alphabetical order.
-    ","1346","test_sort_products_az[webkit]","tests","2026-08-19","passed","2026-08-19","","test_inventory","",""
+    Test that products can be sorted Z-A by name.
+    Verifies that products are in reverse alphabetical order.
+    ","1056","test_sort_products_za[chromium]","tests","2026-08-20","passed","2026-08-20","","test_inventory","",""
+"
+    Test that a locked out user cannot login and sees appropriate error message.
+    Verifies error handling for locked user accounts.
+    ","6380","test_locked_out_user[webkit]","tests","2026-08-20","passed","2026-08-20","","test_login","",""
+"
+    Test that order total is correctly calculated.
+    Verifies that total = subtotal + tax.
+    ","1899","test_verify_order_total[webkit]","tests","2026-08-20","passed","2026-08-20","","test_checkout","",""
+"
+    Test that inventory page loads with all 6 products visible.
+    Verifies that product list is displayed after login.
+    ","1201","test_inventory_page_loads[firefox]","tests","2026-08-20","passed","2026-08-20","","test_inventory","",""
+"
+    Test that missing first name shows validation error.
+    Verifies form validation for required first name field.
+    ","1590","test_missing_first_name[firefox]","tests","2026-08-20","passed","2026-08-20","","test_checkout","",""
+"
+    Test that missing last name shows validation error.
+    Verifies form validation for required last name field.
+    ","1480","test_missing_last_name[firefox]","tests","2026-08-20","passed","2026-08-20","","test_checkout","",""
+"
+    Test that invalid password shows error message.
+    Verifies that login fails with incorrect password.
+    ","5957","test_invalid_password[chromium]","tests","2026-08-20","passed","2026-08-20","","test_login","",""
+"
+    Test that cart items persist after navigating away and back.
+    Verifies that cart data is maintained across page navigation.
+    ","1360","test_cart_persists_after_navigation[firefox]","tests","2026-08-20","passed","2026-08-20","","test_cart","",""
+"
+    Test that invalid password shows error message.
+    Verifies that login fails with incorrect password.
+    ","6436","test_invalid_password[webkit]","tests","2026-08-20","passed","2026-08-20","","test_login","",""
+"
+    Test that invalid password shows error message.
+    Verifies that login fails with incorrect password.
+    ","6106","test_invalid_password[firefox]","tests","2026-08-20","passed","2026-08-20","","test_login","",""
+"
+    Test that products can be sorted by price high to low.
+    Verifies that prices are in descending order.
+    ","1050","test_sort_by_price_high_low[chromium]","tests","2026-08-20","passed","2026-08-20","","test_inventory","",""
+"
+    Test that clicking on a product navigates to product detail page.
+    Verifies that product detail page loads with correct product information.
+    ","1032","test_product_detail_page[chromium]","tests","2026-08-20","passed","2026-08-20","","test_inventory","",""
+"
+    Test that cart badge updates with each item addition.
+    Verifies that badge count is accurate.
+    ","1224","test_cart_badge_updates[chromium]","tests","2026-08-20","passed","2026-08-20","","test_cart","",""
+"
+    Test that both empty fields show error message.
+    Verifies validation when username and password are both empty.
+    ","1419","test_both_fields_empty[webkit]","tests","2026-08-20","passed","2026-08-20","","test_login","",""
+"
+    Test that user can add a single item to cart.
+    Verifies that cart count increments to 1.
+    ","2049","test_add_single_item_to_cart[webkit]","tests","2026-08-20","passed","2026-08-20","","test_cart","",""
+"
+    Test that missing first name shows validation error.
+    Verifies form validation for required first name field.
+    ","1248","test_missing_first_name[chromium]","tests","2026-08-20","passed","2026-08-20","","test_checkout","",""
+"
+    Test that clicking on a product navigates to product detail page.
+    Verifies that product detail page loads with correct product information.
+    ","1271","test_product_detail_page[firefox]","tests","2026-08-20","passed","2026-08-20","","test_inventory","",""
 "
     Test that missing zip code shows validation error.
     Verifies form validation for required zip code field.
-    ","1571","test_missing_zip_code[webkit]","tests","2026-08-19","passed","2026-08-19","","test_checkout","",""
+    ","1859","test_missing_zip_code[webkit]","tests","2026-08-20","passed","2026-08-20","","test_checkout","",""
+"
+    Test that user can remove all items from cart.
+    Verifies that cart becomes empty after removing multiple items.
+    ","1948","test_remove_all_items[chromium]","tests","2026-08-20","passed","2026-08-20","","test_cart","",""
+"
+    Test that a locked out user cannot login and sees appropriate error message.
+    Verifies error handling for locked user accounts.
+    ","5964","test_locked_out_user[chromium]","tests","2026-08-20","passed","2026-08-20","","test_login","",""
+"
+    Test that inventory page loads with all 6 products visible.
+    Verifies that product list is displayed after login.
+    ","1037","test_inventory_page_loads[chromium]","tests","2026-08-20","passed","2026-08-20","","test_inventory","",""
+"
+    Test that products can be sorted A-Z by name.
+    Verifies that products are in alphabetical order.
+    ","1205","test_sort_products_az[firefox]","tests","2026-08-20","passed","2026-08-20","","test_inventory","",""
+"
+    Test that products can be sorted by price low to high.
+    Verifies that prices are in ascending order.
+    ","1075","test_sort_by_price_low_high[chromium]","tests","2026-08-20","passed","2026-08-20","","test_inventory","",""
+"
+    Test that user can navigate away from checkout and cart persists.
+    Verifies that canceling checkout doesn't lose cart items.
+    ","1665","test_checkout_cancel[firefox]","tests","2026-08-20","passed","2026-08-20","","test_checkout","",""
+"
+    Test that empty username field shows error message.
+    Verifies validation for empty username input.
+    ","1430","test_empty_username[webkit]","tests","2026-08-20","passed","2026-08-20","","test_login","",""
+"
+    Test that user can add multiple items to cart.
+    Verifies that cart count increments correctly with each addition.
+    ","1833","test_add_multiple_items_to_cart[webkit]","tests","2026-08-20","passed","2026-08-20","","test_cart","",""
+"
+    Test that user can add product to cart from product detail page.
+    Verifies that add to cart button works on detail page.
+    ","1817","test_add_product_from_detail_page[firefox]","tests","2026-08-20","passed","2026-08-20","","test_inventory","",""
+"
+    Test that products can be sorted Z-A by name.
+    Verifies that products are in reverse alphabetical order.
+    ","1202","test_sort_products_za[firefox]","tests","2026-08-20","passed","2026-08-20","","test_inventory","",""
+"
+    Test that user can remove all items from cart.
+    Verifies that cart becomes empty after removing multiple items.
+    ","2556","test_remove_all_items[webkit]","tests","2026-08-20","passed","2026-08-20","","test_cart","",""
+"
+    Test that user can continue shopping from cart page.
+    Verifies that continue shopping button returns to inventory.
+    ","1768","test_continue_shopping[webkit]","tests","2026-08-20","passed","2026-08-20","","test_cart","",""
+"
+    Test that products can be sorted Z-A by name.
+    Verifies that products are in reverse alphabetical order.
+    ","1540","test_sort_products_za[webkit]","tests","2026-08-20","passed","2026-08-20","","test_inventory","",""
+"
+    Test that user can remove items from cart.
+    Verifies that cart is empty after removing all items.
+    ","1727","test_remove_item_from_cart[chromium]","tests","2026-08-20","passed","2026-08-20","","test_cart","",""
+"
+    Test that products can be sorted A-Z by name.
+    Verifies that products are in alphabetical order.
+    ","1092","test_sort_products_az[chromium]","tests","2026-08-20","passed","2026-08-20","","test_inventory","",""
+"
+    Test complete end-to-end checkout flow.
+    Verifies full journey: login → add items → checkout → confirmation.
+    ","1393","test_complete_checkout_flow[chromium]","tests","2026-08-20","passed","2026-08-20","","test_checkout","",""
+"
+    Test that products can be sorted by price high to low.
+    Verifies that prices are in descending order.
+    ","1522","test_sort_by_price_high_low[webkit]","tests","2026-08-20","passed","2026-08-20","","test_inventory","",""
+"
+    Test that clicking on a product navigates to product detail page.
+    Verifies that product detail page loads with correct product information.
+    ","1533","test_product_detail_page[webkit]","tests","2026-08-20","passed","2026-08-20","","test_inventory","",""
+"
+    Test checkout behavior when cart is empty.
+    Verifies that user cannot proceed to checkout with empty cart.
+    ","1007","test_checkout_without_items[chromium]","tests","2026-08-20","passed","2026-08-20","","test_checkout","",""
+"
+    Test that missing zip code shows validation error.
+    Verifies form validation for required zip code field.
+    ","1469","test_missing_zip_code[firefox]","tests","2026-08-20","passed","2026-08-20","","test_checkout","",""
+"
+    Test that invalid username shows error message.
+    Verifies that login fails with non-existent username.
+    ","6416","test_invalid_username[webkit]","tests","2026-08-20","passed","2026-08-20","","test_login","",""
+"
+    Test complete end-to-end checkout flow.
+    Verifies full journey: login → add items → checkout → confirmation.
+    ","1593","test_complete_checkout_flow[firefox]","tests","2026-08-20","passed","2026-08-20","","test_checkout","",""
+"
+    Test checkout behavior when cart is empty.
+    Verifies that user cannot proceed to checkout with empty cart.
+    ","1292","test_checkout_without_items[firefox]","tests","2026-08-20","passed","2026-08-20","","test_checkout","",""
+"
+    Test that cart badge updates with each item addition.
+    Verifies that badge count is accurate.
+    ","1459","test_cart_badge_updates[firefox]","tests","2026-08-20","passed","2026-08-20","","test_cart","",""
+"
+    Test that user can add product to cart from product detail page.
+    Verifies that add to cart button works on detail page.
+    ","1639","test_add_product_from_detail_page[chromium]","tests","2026-08-20","passed","2026-08-20","","test_inventory","",""
+"
+    Test that user can logout and return to login page.
+    Verifies that logout functionality works correctly.
+    ","1924","test_logout[chromium]","tests","2026-08-20","passed","2026-08-20","","test_login","",""
+"
+    Test that user can add multiple items to cart.
+    Verifies that cart count increments correctly with each addition.
+    ","1425","test_add_multiple_items_to_cart[firefox]","tests","2026-08-20","passed","2026-08-20","","test_cart","",""
+"
+    Test that user can add a single item to cart.
+    Verifies that cart count increments to 1.
+    ","1265","test_add_single_item_to_cart[chromium]","tests","2026-08-20","passed","2026-08-20","","test_cart","",""
+"
+    Test that missing zip code shows validation error.
+    Verifies form validation for required zip code field.
+    ","1290","test_missing_zip_code[chromium]","tests","2026-08-20","passed","2026-08-20","","test_checkout","",""
+"
+    Test that missing last name shows validation error.
+    Verifies form validation for required last name field.
+    ","1271","test_missing_last_name[chromium]","tests","2026-08-20","passed","2026-08-20","","test_checkout","",""
+"
+    Test that user can continue shopping from cart page.
+    Verifies that continue shopping button returns to inventory.
+    ","1496","test_continue_shopping[firefox]","tests","2026-08-20","passed","2026-08-20","","test_cart","",""
+"
+    Test that cart items persist after navigating away and back.
+    Verifies that cart data is maintained across page navigation.
+    ","1189","test_cart_persists_after_navigation[chromium]","tests","2026-08-20","passed","2026-08-20","","test_cart","",""
+"
+    Test that empty password field shows error message.
+    Verifies validation for empty password input.
+    ","1106","test_empty_password[firefox]","tests","2026-08-20","passed","2026-08-20","","test_login","",""
+"
+    Test that user can remove items from cart.
+    Verifies that cart is empty after removing all items.
+    ","1987","test_remove_item_from_cart[firefox]","tests","2026-08-20","passed","2026-08-20","","test_cart","",""
+"
+    Test that invalid username shows error message.
+    Verifies that login fails with non-existent username.
+    ","5981","test_invalid_username[chromium]","tests","2026-08-20","passed","2026-08-20","","test_login","",""
+"
+    Test that cart displays correct item details (name and price).
+    Verifies that item information is accurate in the cart.
+    ","1412","test_cart_item_details[firefox]","tests","2026-08-20","passed","2026-08-20","","test_cart","",""
+"
+    Test that missing first name shows validation error.
+    Verifies form validation for required first name field.
+    ","1799","test_missing_first_name[webkit]","tests","2026-08-20","passed","2026-08-20","","test_checkout","",""
+"
+    Test that empty password field shows error message.
+    Verifies validation for empty password input.
+    ","1396","test_empty_password[webkit]","tests","2026-08-20","passed","2026-08-20","","test_login","",""
+"
+    Test that user can remove items from cart.
+    Verifies that cart is empty after removing all items.
+    ","2286","test_remove_item_from_cart[webkit]","tests","2026-08-20","passed","2026-08-20","","test_cart","",""
+"
+    Test that user can logout and return to login page.
+    Verifies that logout functionality works correctly.
+    ","2334","test_logout[firefox]","tests","2026-08-20","passed","2026-08-20","","test_login","",""
+"
+    Test that products can be sorted by price low to high.
+    Verifies that prices are in ascending order.
+    ","1606","test_sort_by_price_low_high[webkit]","tests","2026-08-20","passed","2026-08-20","","test_inventory","",""
